@@ -24,8 +24,8 @@ border-style: solid;
 <script>
 
  #map {
-                height: 30%;
-                width: 30%;
+                height: 100%;
+                width: 100%;
             }
 
 
@@ -68,7 +68,16 @@ On October 7, 2012, state paramilitary forces allegedly beat hospital guards and
       
         <p> <a href="https://www.hrw.org/news/2012/10/20/yemen-security-forces-raiding-aden-hospitals">Source</a>     </p>
             
-           <script>
+          
+       
+        <p><b>Disclaimer: The following video is for examplary purposes only and does not depict any attack on the above map</b></p>
+        
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/_M36baDV2Co" frameborder="0" allowfullscreen></iframe>	
+        
+       <p> Click <a href="http://watchlist.org/#get-involved">Here</a> to find out how you can help </p>
+        
+        
+ <script>
            var Port_of_Adenlayer;
            $(document.ready(function(){
            cartodb.createVis('map',
@@ -83,15 +92,13 @@ On October 7, 2012, state paramilitary forces allegedly beat hospital guards and
            
            
            
-           </script>
-       
-        <p><b>Disclaimer: The following video is for examplary purposes only and does not depict any attack on the above map</b></p>
+           </script>       
         
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/_M36baDV2Co" frameborder="0" allowfullscreen></iframe>	
         
-       <p> Click <a href="http://watchlist.org/#get-involved">Here</a> to find out how you can help </p>
         
             </center>
+
+
 
         
     </body>
