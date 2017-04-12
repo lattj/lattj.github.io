@@ -80,9 +80,9 @@ On October 7, 2012, state paramilitary forces allegedly beat hospital guards and
         
  <script>
            var Port_of_Adenlayer;
-           $(document.ready(function(){
+           $(document).ready(function(){
            cartodb.createVis('map',
-           'https://thenewschool.carto.com/u/julianlatt/api/v2/viz/0fe18fb2-f96d-11e6-b525-0e3ebc282e83/viz.json')
+           'https://thenewschool.carto.com/u/julianlatt/api/v2/viz/0fe18fb2-f96d-11e6-b525-0e3ebc282e83/viz.json');
            .done(function (vis, layers) {
            PortofAdenlayer = layers[1].getSubLayer(3 )
            });  
