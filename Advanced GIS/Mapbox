@@ -1,11 +1,44 @@
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-<div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoibGF0dGoiLCJhIjoiY2oxZm9lMHJ6MDBqejJ3cGN0MXpscjJvaiJ9.RssR2P3pc-BQwYcyOeos2Q';
-  var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-v9'
-  });
-</script>
+        <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            #map {
+                height: 100%;
+                width: 100%;
+            }
+          
+        
+        </style>
+
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        </script>
+
+        <script>
+            
+            $(document).ready(function () {
+                cartodb.createVis('map', 'https://thenewschool.carto.com/u/julianlatt/api/v2/viz/0fe18fb2-f96d-11e6-b525-0e3ebc282e83/viz.json',{
+                zoom:13, 
+                center_lat: 12.807,
+                center_lon: 45.031
+                })
+                    
+                    });
+
+        </script>
+        <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+    </body>
+</html>
