@@ -1,3 +1,11 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
 <link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
 
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibGF0dGoiLCJhIjoiY2oxZm9lMHJ6MDBqejJ3cGN0MXpscjJvaiJ9.RssR2P3pc-BQwYcyOeos2Q';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/satellite-v9'
+  });
+</script>
